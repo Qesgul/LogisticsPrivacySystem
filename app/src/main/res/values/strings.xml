@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LPS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Name">姓&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;名：</string>
+    <string name = "a">A 测试</string>
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录</string>
+    <string name="delete_item">删除地址</string>
+    <string name="delete_item_failed">删除失败</string>
+    <string name="sdelete_item_success">删除成功</string>
+</resources>

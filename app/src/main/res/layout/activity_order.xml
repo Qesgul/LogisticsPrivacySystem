@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:ignore="ContentDescription" >
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/home_layout_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 我的贴吧 -->
+            <Button
+                android:id="@+id/home_bt_like"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/shape_corner_left"
+                android:scaleType="center"
+                android:text="未完成订单"/>
+
+            <!-- 我的标签 -->
+            <Button
+                android:id="@+id/home_bt_mark"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/shape_corner_right"
+                android:scaleType="center"
+                android:text="已完成订单"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_layout_bar"
+        android:layout_marginTop="-12.0dip" />
+
+</LinearLayout>

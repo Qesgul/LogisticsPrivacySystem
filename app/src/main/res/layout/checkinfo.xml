@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/checkRemind"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:text="请输入单号与查询校验码"
+        android:textSize="25dip"
+        android:gravity="center"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/Danhao"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="单号"
+            android:textSize="20dip"
+            android:layout_gravity="center"/>
+        <EditText 
+            android:id="@+id/input_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/checkcode"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="查询校验码"
+            android:textSize="20dip"
+            android:layout_gravity="center"
+            ></TextView>
+        <EditText 
+            android:id="@+id/input_checkcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>"
+    </LinearLayout>
+    <Button
+        android:background="@drawable/shape_corner"
+        android:id="@+id/okcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确 认"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <Button
+        android:background="@drawable/shape_corner"
+        android:id="@+id/ewmbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"
+        android:textSize="30dp"/>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/showresult"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dip"/>
+        
+    </RelativeLayout>"
+
+</LinearLayout>

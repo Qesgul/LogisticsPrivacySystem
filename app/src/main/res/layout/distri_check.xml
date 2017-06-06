@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="top"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提  货  校  验"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"/>
+        <LinearLayout
+		     android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="300dip"
+             android:orientation="horizontal" >
+			 
+            <TextView
+                android:id="@+id/scan_result_one"
+				android:layout_width="110dip"
+				android:layout_height="wrap_content"
+				android:text=">状    态： "
+				android:layout_gravity="center"
+				android:textSize="18dip"/>
+            <TextView
+				android:id="@+id/scan_result"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="未    扫    码"
+				android:gravity="center"
+				android:textSize="18dip"/>
+        </LinearLayout>
+        <LinearLayout
+				android:id="@+id/linearLayout2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+	            android:layout_marginTop="30dip"
+				android:orientation="horizontal" >
+            <TextView 
+                android:id="@+id/remind_inputcode"
+                android:layout_width="110dip"
+                android:layout_height="match_parent"
+                android:text=">提货校验码"
+                android:gravity="center_vertical|left"
+                android:textSize="18dip"/>
+            <EditText 
+                android:id="@+id/inputcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+			android:background="@drawable/shape_corner"
+            android:id="@+id/distri_checkok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:text="确    定"
+            android:textSize="25dip"/>
+    </LinearLayout>
+
+</FrameLayout>

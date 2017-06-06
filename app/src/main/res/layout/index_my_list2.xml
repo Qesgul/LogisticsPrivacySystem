@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/orange"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="56"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/people"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="180"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:text="寄件人地址"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="52"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/nfcbutton"
+                android:background="@drawable/nfc"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/normal_bg_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView2"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="省市"
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/addresssheng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView4"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="县/区"
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/addressqu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView5"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="街道地址"
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/addressedit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="新模范马路66号"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView6"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="邮编"
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/youbian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="210000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView7"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="收件人 "
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/addressname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="张新文"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/receivertextView8"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:text="电话 "
+            android:textSize="20dip"/>
+
+        <EditText
+            android:id="@+id/addressphone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="15851810112"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/normal_bg_color" />
+
+    <LinearLayout
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/shape_corner"/>
+    </LinearLayout>
+
+</LinearLayout>

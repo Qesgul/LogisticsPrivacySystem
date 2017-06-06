@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/orange"
+        android:gravity="center"
+        android:textColor="#fff">
+        <TextView
+            android:text="收 件"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="6dp"
+                android:paddingRight="8dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shou"
+                    android:id="@+id/imageView3"/>
+
+                <TextView
+                    android:id="@+id/receivertextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="收件人"
+                    android:textSize="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:layout_toEndOf="@+id/imageView3"/>
+
+                <ImageButton
+                    android:id="@+id/nfc_rec"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nfc_black"
+                    android:gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView2"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="省份"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/ReceiverSheng"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView3"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="地市"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/ReceiverShi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView4"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="县/区"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/ReceiverXianOrQu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView5"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="街道地址"
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/receivernoeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="新模范马路66号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView6"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="邮编"
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/receiverzipcodeeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="210000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView7"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="收件人 "
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/receivernameeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="张新文"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView8"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="电话 "
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/receivecalleditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="15851810112"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="6dp"
+                android:paddingRight="8dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ji"
+                    android:id="@+id/imageView4"/>
+
+                <TextView
+                    android:id="@+id/sendertextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="寄件人"
+                    android:textSize="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:layout_toEndOf="@+id/imageView4"/>
+                <ImageButton
+                    android:id="@+id/nfc_pos"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nfc_black"
+                    android:gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/receivertextView9"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="8dp"
+                    android:text="省份"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/SenderSheng"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView10"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="市"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/SenderShi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView11"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="县/区"
+                    android:textSize="20dip"/>
+
+                <Spinner
+                    android:id="@+id/SenderXianOrQu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView12"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="街道地址 "
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/sendernoeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="四户镇桃园存四组276号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView13"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="邮编 "
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/senderzipcodeeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="210046"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView14"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="发件人"
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/sendernameeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="张新文"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView15"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="电话"
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/sendercalleditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="15851810112"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:id="@+id/receivertextView16"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="true"
+                    android:text="备注"
+                    android:textSize="20dip"/>
+
+                <EditText
+                    android:id="@+id/otherText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="备注"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/SendMsgOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_corner"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#fff"
+                android:textSize="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

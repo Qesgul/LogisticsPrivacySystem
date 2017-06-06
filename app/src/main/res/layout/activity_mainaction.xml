@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/orange"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="56"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/nfcbutton"
+                android:background="@drawable/nfc"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/people"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="180"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:text="首 页"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="52"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/person"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/person" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/image"
+        android:orientation="horizontal"
+        android:background="@drawable/bg233"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/mainaction_sendButton"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bt1"/>
+
+            <TextView
+                android:textColor="#2b2a2a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="收 件"
+                android:gravity="center"
+                android:textSize="28dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/mainaction_distributionButton"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/bt2"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="配 送"
+                android:textColor="#2b2a2a"
+                android:textSize="28dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/distriCheck"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/bt3"
+                />
+            <TextView
+                android:textColor="#2b2a2a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="发 件"
+                android:gravity="center"
+                android:textSize="28dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/login_queryButton"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/bt4"
+                />
+            <TextView
+                android:textColor="#2b2a2a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="查 询"
+                android:gravity="center"
+                android:textSize="28dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

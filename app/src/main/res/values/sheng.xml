@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources>     
+    <string-array name="sheng">
+                 <item>江苏省</item>                 
+    </string-array> 
+    <string-array name="shi">
+                 <item>南京市</item>
+                 <item>徐州市</item>                 
+    </string-array> 
+    <string-array name="NJshi">
+                 <item>鼓楼区</item>
+                 <item>栖霞区</item>                 
+    </string-array>
+    <string-array name="XZshi">
+                 <item>邳州市</item>
+                 <item>铜山县</item>                 
+    </string-array>  
+</resources>
